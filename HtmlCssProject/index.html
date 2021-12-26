@@ -83,5 +83,36 @@
     <p>¿quieres saber mi direccion? Aqui la tienes <a href="practica.html#Direccion_de_envio">Direccion </a></p>
     <p>Tambien podemos usar esta referencia a un fragmento de documento para apuntar hacia otra parte del mismo documento:</p>
     <p>Perdido? <a href="#Inicio">Ve al comienzo del documento!</a></p>
+    <h3>URLs absolutas y relativas</h3>
+    <p><strong>URL absoluta: </strong> Hace referencia a una dirección definida por su ubicación absoluta en la web, esta incluye el protocolo y el nombre del dominio.</p>
+    <p><strong>URL relativa:</strong>Hace referencia a una dirección que depende de la posición del archivo desde donde se utiliza — son las que vimos en la sección anterior. </p>
+    <h3>Indica claramente los recursos no HTML</h3>
+    <p>Cuando damos referencias a recursos para descargarlos (como documentos en formato PDF o Word) o para reproducirlos (como archivos de audio o vídeo) o que tengan un efecto inesperado (una ventana emergente) hay que indicarlo para no confundir al usuario.</p>
+    <h4>Ejemplos:</h4>
+    <p><a href="http://www.example.com/large-report.pdf">
+        Descarga el informe de ventas (PDF, 10MB)
+    </a></p>
+    <p><a href="http://www.example.com/video-stream/">
+        reproduce el video (el flujo de datos se abre en un pestaña independiente, calidad HD)
+    </a></p>
+    <p><a href="http://www.example.com/car-game">
+        Juega al juego del automovil(requiere Flash)
+    </a></p>
+    <h3>Utiliza el atributo download</h3>
+    <a href="https://download.mozilla.org/?product=firefox-latest-ssl&os=win64&lang=es-MX"
+        download="Firefox-lastest-64bit-installer.exe">
+        Descarga la ultima version de firefox para windows (64 bits) (español, es-MX)
+    </a>
+    <p>Apredisaje activo: crear una menu de navegacion</p>
+    <!-- Ruta relativa y tal -->
+    <a href="ApredizajeActivo/CrearUnMenuDeNavegacion/index.html" target="_blank">Link donde fue realizado el ejercicio</a>
+    <h3>Enlace a correo electronico</h3>
+    <p>Es posible crear enlaces o botones que, cuando se pulsan, abren un nuevo correo saliente en lugar de enlazar a un recurso o página. Esto se consigue con el elemento ancla <a> y el elemento mailto: seguido del esquema de la URL.</p>
+    <a href="mailto:nowhere@mozilla.org">Enviar un correo electronico a ninguna parte</a>
+    <p>Ademas del correo electronico puedes proporcionar otra informacion. puedes incluir cualquier campo estandar contenido en el encabezado de cualquier mensaje en la URL <em>mailto</em> que proporciones. Los mas utilizados son el <em>subject</em>(asunto) <em>cc</em>(con copia a) o <em>bcc</em>(copia oculta), y <em>body</em>(permite especificar un mensaje breve oara el nuevo correo electronico.)</p>
+    <a href="mailto:nowhere@mozilla.org?cc=name2@rapidtables.com&bcc=name3@rapidtables.com&subject=The%20subject%20of%20the%20email&body=The%20body%20of%20the%20email">
+        Enviar un correo electronico cc, bcc, asunto y cuerpo
+    </a><br>
+    <a href="ApredizajeActivo/Enlaces/index.html" target="_blank">Practica de enlaces</a>
 </body>
 </html>
