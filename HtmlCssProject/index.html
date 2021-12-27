@@ -2,6 +2,7 @@
 <html lang="es">
 <head>
     <!-- Area de metadatos -->
+    <!-- DOCUMENTO CON ERRORES DE TIPEO WARNING!!!! -->
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,14 +11,14 @@
 <body>
     <p id="Inicio">En este html creado sera usado como libreta de los conceptos basicos. Estoy siguendo los manuales de la siguiente fuente</p> <a href="https://developer.mozilla.org/es/docs/Learn/HTML/Introduction_to_HTML/Getting_started">Developer Mozilla</a>
     <h1>Anatomia de un elemento de HTML</h1>
-    <img src="img\htmlexp.png" alt="">
+    <img src="img\htmlexp.png" alt="" width="80%">
     <p>El elemento lo conforman la etiqueta de apertura, seguida del contenido, seguido de la etiqueta de cierre</p>
     <h1>Elemento anidado</h1>
     <p>Se pueden anidar dos elementos para destacar una frase o algun item dentro de la etiqueta, Se demostrara en la siguiente oracion</p>
     <p>Mi gato es <strong>Muy</strong> jugueton</p>
     <p>Recordar cerrar los elementos correctamente en este caso por ejemplo tenemos que cerrar el elemento strong ya que esta dentro de la etiqueta parrafo (p), no llevar a cabo esta practica puede derivar a errores</p>
     <p>Los elementos tambien pueden tener atributos. Los atrubutos tiene el siguinte aspecto</p>
-    <img src="img/htmlatributos.png" alt="Elemento con atrubuto"/>   
+    <img src="img/htmlatributos.png" alt="Elemento con atrubuto" width="80%"/>   
     <p>El atributo class asigna al elemento un indentificados que se puede utilizar para dotarlo de informacion de estilo</p>
     <h1>Elemento Ancla</h1>
     <p>El elemento <strong>a</strong> que significa Ancla. Puede convertir el texto que encierra en un hipervinculo. Las anclas pueden tener varios atributos: </p>
@@ -114,5 +115,25 @@
         Enviar un correo electronico cc, bcc, asunto y cuerpo
     </a><br>
     <a href="ApredizajeActivo/Enlaces/index.html" target="_blank">Practica de enlaces</a>
+    <div class="documentoHTML">
+        <h1>Partes basicas de un documento</h1>
+        <p><strong>Encabezado: </strong>Normalmente formado por un gran franja que cruza la parte superior de la pagina con un <strong>gran titulo</strong>, un logotipo y quizas un lema. Esta parte suele permanecer invarianble mientras navegas entro las paginas de un mismo sitio web.</p>
+        <p><strong>Barra de navegacion: </strong>Son los enlaces a las secciones principales del sitio web. Normalmente esta formada por un menu con botones, enlaces o pestañas. Al igual que el <em>encabezado,</em> este contenido suele permanecer invariable en las diferentes paginas del sitio; tener un menu inconsistente en tu pagina web conducira a los usuarios a la confusion y frustacion. Puedes tener el <em>encabezado</em> y la <em>barra de navegacion</em> en un mismo elemento pero mantener los componentes separado es mejor por motivos de accesibilidad porque los lectores de pantalla pueden leer mejor ambos elementos si estan separados.</p>
+        <p><Strong>Contenido principal: </Strong>Es la gran parte central de la pagina y contiene la mayor parte del contenido particular de una pagina web concreta; por ejemplo, el video que quieres ver, la narracion que quieres leer, el mapa que quieres consultar, los titulares de las noticias, etc. ¡Esta es la parte que definiticamente debe variar mucho de una pagina a otro de tu sitio web!</p>
+        <p><strong>Barra lateral: </strong>Suele incluir algun tipo de informacion adicional, enlaces, citas, publicidad, etc. Normalmente esta relacionada con el contenido principal de la pagina (por ejemplo, en una pagina de noticias, la barra lateral podria contener la biografia del autor o enlaces a articulos relacionados), pero en otras ocasiones encontraras elementos recurrentes como un menu de navegacion secundario.</p>
+        <p><strong>pie de pagina: </strong>Es la parte inferior de la pagina, que generalmente contiene la letra pequeña, el copyright o la informacion de contacto. Es el sitio donde se coloca la informacion comun(al igual que en el encabezado), pero esta informacion no suele ser tan importante o es secundaria con el respecto a la pagina en si misma. El pie tambien se suele usar para propositos SEO, e incluye enlaces de acceso rapido al contenido mas popular.</p>
+        <p>Una pagina web tipica se podria parecer a esta:</p>
+        <img src="img/sample-website.png" alt="Ejemplo clasico de una pagina web" width="80%">
+        <p>HTML dispone de etiquetas edecuadas que puedes usar para establecer estas secciones semanticas, por ejemplo;</p>
+        <ol>
+            <li><strong>encabezado: </strong>header</li>
+            <li><strong>menu de navegacion: </strong>nav</li>
+            <li><strong>contenido principal: </strong>main, con varias subsecciones (ademas de la barra lateral) representadas por los elementos article, section, y div</li>
+            <li><strong>barra lateral: </strong>aside; a menudo colocada dentro de main</li>
+            <li><strong>pie de pagina: </strong>footer</li>
+        </ol>
+        <a href="ApredizajeActivo/EjemploPaginaWeb/index.html">Ejemplo de un esquleto web HTML</a>
+
+    </div>
 </body>
 </html>
