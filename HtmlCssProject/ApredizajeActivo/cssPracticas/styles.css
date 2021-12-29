@@ -1,0 +1,10 @@
+h1{
+    color: hotpink;
+    border-bottom: 10px;
+    border-bottom-style: dotted;
+    border-bottom-color: purple;
+}
+h2{
+    color: gray;
+    font: oblique bold 120% cursive;;
+}
