@@ -1,0 +1,97 @@
+li{
+    list-style-type: none;
+}
+
+h1{
+    color: black;
+}
+p, li{
+    color: darkslategray;
+}
+/* class */
+.documentoHTML {
+    color: orange;
+    font-weight: bold;
+}
+li.documentoHTML{
+    color: black;
+    font-weight: bold;
+}
+/* Dar formato segun el estado dependiendo del estado del ancla: si se no se ha visitado el enlace se vera de color rosa y verde en los que si */
+a:link {
+    color: pink;
+}
+a:visited {
+    color: green;
+}
+/* cambiar de aparoencia de a eliminando el subrayado si se pasa el puntero sobre el */
+a:hover {
+    text-decoration: none;
+}
+/* Selecciona cualquier elemento <span> que se encuentre dentro de un <p>, que esté dentro de un <artículo> */ 
+article p span{
+
+}
+/* selecciona cualquier <p> que se encuentre directamente después de <ul>, que va directamente después de <h1> */
+h1 + ul + p { 
+
+}
+/* También puedes combinar varios tipos juntos. Intenta añadir lo siguiente al código:
+body h1 + p .special {
+  color: yellow;
+  background-color: black;
+  padding: 5px;
+}
+*/
+/* Dará formato a cualquier elemento con la clase special, dentro de un elemento <p> que venga justo después de <h1>, el cual se encuentra dentro de <body>. ¡Uf!
+
+En el HTML original que proporcionamos, el único elemento al que esto aplica estilo es <span class="special">. */
+/* En propiedades abreviadas con 4 valores, como margin y padding (relleno), los valores se aplican
+   según el orden: arriba, derecha, abajo e izquierda (en sentido horario desde la parte superior). También hay otros
+   tipos de abreviaturas, como las propiedades abreviadas con 2 valores que establecen el relleno/margen,
+   arriba/abajo, y luego izquierda/derecha */
+   /* padding: 10px 15px 15px 5px; */
+   /* ==== */
+   /* padding-top: 10px;
+padding-right: 15px;
+padding-bottom: 15px;
+padding-left: 5px; */
+
+/* Mientras que esta linea: */
+/* background: red url(bg-graphic.png) 10px 10px repeat-x fixed; */
+/* ==== */
+/* background-color: red;
+background-image: url(bg-graphic.png);
+background-position: 10px 10px;
+background-repeat: repeat-x;
+background-scroll: fixed; */
+
+/* Funciones */
+.external{
+    border: 5px solid black;
+
+}
+.box{
+    padding: 10px;
+    width: calc(90% - 30px);
+    background-color: rebeccapurple;
+    color: white;
+}
+.boxRotate{
+    margin: 30px;
+    width: 100px;
+    height: 100px;
+    background-color: rebeccapurple;
+    transform: rotate(0.8turn);
+}
+/* @rules */
+/* @import 'styles2.css'; */
+/* Cuantos son 30em??? */
+body{
+    background-color: rebeccapurple;
+}
+@media (min-width: 30em){
+    body{
+        background-color: whitesmoke;
+    }
+}
