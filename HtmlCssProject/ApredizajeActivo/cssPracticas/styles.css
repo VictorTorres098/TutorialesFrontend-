@@ -1,3 +1,6 @@
+body{
+    font-family: Monaco, Georgia, 'Times New Roman', Times, serif, fantasy;
+}
 h1{
     color: hotpink;
     border-bottom: 10px;
@@ -6,5 +9,19 @@ h1{
 }
 h2{
     color: gray;
-    font: oblique bold 120% cursive;;
+    font: oblique bold 120% cursive;
+}
+/* .contact{
+    padding: 10px;
+    border-style: solid;
+    border-color: purple;
+} */
+.contact ul{
+    background-color: #eeeeee;
+    border: 5px solid purple;
+}
+h3{
+    font-style: Monaco;
+    font-weight: bold;
+    font-size: x-large;
 }
