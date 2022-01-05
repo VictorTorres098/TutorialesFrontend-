@@ -150,4 +150,25 @@
     <p>Una de las @rules más comunes con las que te encontrarás es @media, que permite usar consultas a medios para aplicar CSS solo cuando se dan ciertas condiciones (por ejemplo, cuando la resolución de la pantalla supera un valor determinado o la anchura supera un valor concreto).</p>
     <p>Prueba hacer mas chica laventana ?)</p>
     <a href="ApredizajeActivo/cssPracticas/index.html">Practicas CSS</a>
+    <h1>El modelo de caja</h1>
+    <p>Todo en CSS tiene una caja alrededor, y comprender estas cajas es clave para poder crear diseños con CSS o para alinear elementos con otros elementos</p>
+    <p>En CSS, en general, hay dos tipos de cajas: <strong>cajas en bloque</strong> y <strong>cajas en linea.</strong></p>
+    <p>Si una caja se define como un bloque, se comportara de las maneras siguientes:</p>
+    <ul>
+        <li>La caja fuerza un salto de linea al llegar al final de la linea.</li>
+        <li>La caja se extendera en la direccion de la linea para llenar todo el espacio disponible que haya en su contenedor. En la mayoria de los casos, esto significa que la caja sera tan ancha como su contenedor, y llenara el 100% del espacio disponible.</li>
+        <li>Se respetan las propiedades de <em>width</em> y <em>height</em>/li>
+        <li>El relleno, el margen y el borde mantienen a los otros elementos alejados de la caja.</li>
+    </ul>
+    <p>elementos como h1, o usan por defecto block como tipo de visualizacion externa.</p>
+    <p>Si una caja tiene una visualizacion externa de tipo <strong>inline</strong>, entonces:</p>
+    <ul>
+        <li>La caja no fuerza ningun salto de linea al llegar al final de la linea.</li>
+        <li>Las propiedades width y height no se aplican.</li>
+        <li>Se aplican relleno, margen y bordes verticales, pero no se mantienen alejadas otras cajas en linea.</li>
+        <li>Se aplican relleno, margen y bordes horizontales, y mantiene alejadas otras cajas en linea.</li>
+    </ul>
+    <p>El elemento a, que se utiliza para los enlaces, y los elementos span, em y strong son ejemplos de elementos que se muestran en la linea por defecto.</p>
+    <p>El tipo de caja que se aplica a un elemento esta definido por los valores de propiedad <a href="https://developer.mozilla.org/es/docs/Web/CSS/display">display</a> como <strong>block </strong>y <strong>inline</strong>, y se relaciona con el valor <strong>externo</strong> (outer) de visualizacion (display)</p> 
+    
 </html>
