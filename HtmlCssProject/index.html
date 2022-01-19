@@ -15,12 +15,15 @@
     <img src="img\htmlexp.png" alt="" width="80%">
     <p>El elemento lo conforman la etiqueta de apertura, seguida del contenido, seguido de la etiqueta de cierre</p>
     <h1>Elemento anidado</h1>
-    <p>Se pueden anidar dos elementos para destacar una frase o algun item dentro de la etiqueta, Se demostrara en la siguiente oracion</p>
-    <p>Mi gato es <strong>Muy</strong> jugueton</p>
-    <p>Recordar cerrar los elementos correctamente en este caso por ejemplo tenemos que cerrar el elemento strong ya que esta dentro de la etiqueta parrafo (p), no llevar a cabo esta practica puede derivar a errores</p>
-    <p>Los elementos tambien pueden tener atributos. Los atrubutos tiene el siguinte aspecto</p>
-    <img src="img/htmlatributos.png" alt="Elemento con atrubuto" width="80%"/>   
-    <p>El atributo class asigna al elemento un indentificados que se puede utilizar para dotarlo de informacion de estilo</p>
+    <article>
+        <p>Se pueden anidar dos elementos para destacar una frase o algun item dentro de la etiqueta, Se demostrara en la siguiente oracion</p>
+        <p>Mi gato es <strong>Muy</strong> jugueton</p>
+        <p>Recordar cerrar los elementos correctamente en este caso por ejemplo tenemos que cerrar el elemento strong ya que esta dentro de la etiqueta parrafo (p), no llevar a cabo esta practica puede derivar a errores</p>
+        <p>Los elementos tambien pueden tener atributos. Los atrubutos tiene el siguinte aspecto</p>
+        <img src="img/htmlatributos.png" alt="Elemento con atrubuto" width="80%"/>   
+         <p>El atributo class asigna al elemento un indentificados que se puede utilizar para dotarlo de informacion de estilo</p>
+    </article>
+    
     <h1>Elemento Ancla</h1>
     <p>El elemento <strong>a</strong> que significa Ancla. Puede convertir el texto que encierra en un hipervinculo. Las anclas pueden tener varios atributos: </p>
     <p><strong>href: </strong>El valor de este atributo indica la direccion web a la que se quiere que apunte el enlace</p> <!-- Anidado y tal -->
@@ -170,6 +173,10 @@
     </ul>
     <p>El elemento a, que se utiliza para los enlaces, y los elementos span, em y strong son ejemplos de elementos que se muestran en la linea por defecto.</p>
     <p>El tipo de caja que se aplica a un elemento esta definido por los valores de propiedad <a href="https://developer.mozilla.org/es/docs/Web/CSS/display">display</a> como <strong>block </strong>y <strong>inline</strong>, y se relaciona con el valor <strong>externo</strong> (outer) de visualizacion (display)</p> 
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde, asperiores.
-    </p>
+    <h2>Tipos de visualizacion interna y externa</h2>
+    <p>las cajas en CSS tienen un tipo de visualización externa, que define si se trata de una caja en bloque o en línea.</p>
+    <p>Sin embargo, las cajas también tienen un tipo de visualización interna, que determina cómo se disponen los elementos dentro de esa caja. De forma predeterminada, los elementos dentro de una caja se presentan en flujo normal, lo que significa que se comportan como otros elementos de tipo en bloque o en línea</p>
+    <p>Sin embargo, podemos cambiar el tipo de visualización interna utilizando valores de display, como flex. Si en un elemento establecemos display: flex;, el tipo de visualización externa es de tipo bloque (block), pero el tipo de visualización interna cambia a flexible (flex). Cualquier elemento que sea hijo directo de esta caja pasará a comportarse como un elemento de tipo flex, de acuerdo con las reglas que se establecen en la especificación de Flexbox</p>
+    
+
 </html>
