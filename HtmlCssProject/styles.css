@@ -13,7 +13,7 @@ p, li{
     color: orange;
     font-weight: bold;
 }
-li.documentoHTML{
+.documentoHTML, li{
     color: black;
     font-weight: bold;
 }
@@ -29,13 +29,13 @@ a:hover {
     text-decoration: none;
 }
 /* Selecciona cualquier elemento <span> que se encuentre dentro de un <p>, que esté dentro de un <artículo> */ 
-article p span{
+/* article p span{
 
-}
+} */
 /* selecciona cualquier <p> que se encuentre directamente después de <ul>, que va directamente después de <h1> */
-h1 + ul + p { 
+/* h1 + ul + p { 
 
-}
+} */
 /* También puedes combinar varios tipos juntos. Intenta añadir lo siguiente al código:
 body h1 + p .special {
   color: yellow;
@@ -95,3 +95,69 @@ body{
         background-color: whitesmoke;
     }
 }
+/* Ejemplos de diferentes tipos de visualización */
+/* tengo que definir el div antes de modificar los elementos hijos?? */
+.tiposDeVisualizacionBody{
+    width: 500px;
+    margin: 0 auto;
+}
+.tiposDeVisualizacionBody p, ul{
+    border: 2px solid rebeccapurple;
+    padding: .5em;
+}
+.block, li{
+    border: 2px solid blue;
+    padding: .5em;
+}
+.tiposDeVisualizacionBody ul{
+    display: flex;
+    list-style: none;
+}
+.block{
+    display: block;
+}
+
+/* elemenosEnLinea */
+.elemenosEnLinea{
+    width: 500px;
+    margin: 0 auto;
+}
+.elemenosEnLinea p, ul{
+    border: 2px solid rebeccapurple;
+}
+.elemenosEnLinea span, li{
+    border: 2px solid blue;
+}
+.elemenosEnLinea ul{
+    display: inline-flex;
+    list-style: none;
+    padding: 0;
+}
+.inline{
+    display: inline;
+}
+
+
+
+
+
+
+/* flujo normal */
+.flujoNormalBody{
+    width: 500px;
+    margin: 0 auto;
+}
+
+.flujoNormalBody p{
+    background: rgba(225,84,104,0.3);
+    border: 2px solid rgb(255,84,104);
+    padding: 10px;
+    margin: 10px;
+
+} 
+.flujoNormalBody span{
+    background: white;
+    border: 1px solid black;
+}
+
+

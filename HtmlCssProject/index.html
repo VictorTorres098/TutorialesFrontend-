@@ -177,6 +177,49 @@
     <p>las cajas en CSS tienen un tipo de visualización externa, que define si se trata de una caja en bloque o en línea.</p>
     <p>Sin embargo, las cajas también tienen un tipo de visualización interna, que determina cómo se disponen los elementos dentro de esa caja. De forma predeterminada, los elementos dentro de una caja se presentan en flujo normal, lo que significa que se comportan como otros elementos de tipo en bloque o en línea</p>
     <p>Sin embargo, podemos cambiar el tipo de visualización interna utilizando valores de display, como flex. Si en un elemento establecemos display: flex;, el tipo de visualización externa es de tipo bloque (block), pero el tipo de visualización interna cambia a flexible (flex). Cualquier elemento que sea hijo directo de esta caja pasará a comportarse como un elemento de tipo flex, de acuerdo con las reglas que se establecen en la especificación de Flexbox</p>
-    
+    <h3><strong>Ejemplos de diferentes tipos de visualizacion</strong></h3>
+    <p>A continuacion tenemos tres elementos HTML diferentes, todos con visualizacion externa de tipo <strong>block</strong>. El primero es un parrafo, que tiene un borde añadido con CSS. El navegador representa esto como una caja en bloque, por lo que el parrafo comienza en una linea nueva y se expande por todo el ancho disponible.</p>
+    <p>El segundo es una lista, que se presenta usando <strong>display: flex.</strong> Esto establece una disposicion flexible para los elementos que estan dentro del contenedor; sin embargo, la lista en si misma es una caja que se comporta en bloque y, como el parrafo, se expando por todo el ancho del contenedor y fuerza un salto de linea al llegar al final de linea.</p>
+    <p>Debajo hay un parrafo a nivel de bloque, dentro de cual hay dos elementos <strong>span</strong>. Estos elementos normalmente seria de tipo <strong>inline;</strong> sim e,bargo, uno de los elementos tiene una clase de bloque, y lo hemos establecido como <strong>display: block.</strong></p>
+    <div class="tiposDeVisualizacionBody">
+        <p>soy un parrafo.<!-- <a title="estoy chiquito xd"> --> uno chiquito<!-- </a> --></p> 
+        <ul>
+            <li>Item One</li>
+            <li>Item Two</li>
+            <li>Item Three</li>
+        </ul>
+        <p>Yo soy otro parrafo. Algunas de las <span class="block">palabras</span> que han sido envueltas en un <span>elemento span</span>.</p>
+    </div>
 
+    <p>Podemos ver como se comportan los elementos <strong>inline</strong> en el ejemplo siguiente. los elementos <strong>span</strong> del primer parrafo estan <strong>inline</strong> de manera predeterminada y, por lo tanto, no fuerzan ningun salto de lines.</p>
+    <p>Tambien hay un elemento <strong>ul</strong> que se establece como <strong>display: inline-flex,</strong> que crea una caja con un comportamiento de tipo en linea alrededor de algunos elementos de tipo <strong>flex</strong></p>
+    <p>finalmente, hay dos parrafos configurados como <strong>display: inline. el contenedor flexible en linea y los parrafos fluyen todos juntos en linea, en lugar de dividirse en lineas nuevas como lo haria si se mostraran como elementos de bloque</strong></p>
+    <p><strong>En el ejemplo puedes cambiar display: inline por display : block o display: inline-flex y por display: flex para alternar entre estos modos de visualizacion.</strong></p>
+    <div class="elemenosEnLinea">
+        <p>
+            I am a paragraph. Some of the
+            <span>words</span> have been wrapped in a
+            <span>span element</span>.
+        </p>     
+        <ul>
+          <li>Item One</li>
+          <li>Item Two</li>
+          <li>Item Three</li>
+        </ul>
+        <p class="inline">I am a paragraph. A short one.</p>
+        <p class="inline">I am another paragraph. Also a short one.</p>
+    </div>
+
+    <h2>Como se representan por defectos los elementos?</h2>
+    <p>el contenido de un <strong>elemento de nivel de bloque</strong> es el 100% del ancho de su elemento padre y su altura viene determinada por su contenido.</p>
+    <p>Los <strong>Elementos en linea</strong> tienen su altura y anchura determinados por su contenido. No puedes estrablecer el ancho o la altura de los elementos en linea, simplemente se ubica dentro del contenido de los elementos de nivel de bloque. Si deseas controlar el tamaño de un elemento en linea de esta manera, debes configurarlo para que se comporte como un elemento de nivel de bloque con display: block; (o incluso, display: inline-block;, que combina caracteristicas de ambos).</p> 
+    <a href="https://developer.mozilla.org/es/docs/Learn/CSS/CSS_layout/Normal_Flow">Para mas informacion sobre los flujos normales de los elementos haz click!</a>
+    <p><strong>Ejemplo sencillo:</strong></p>
+    <div class="flujoNormalBody">
+        <h1>Flujo de los documentos basicos</h1>
+        <p>Soy un elemento básico de nivel de bloque. Mis elementos de nivel de bloque adyacentes se encuentran en líneas nuevas debajo de mí.</p>
+        <p>Cubrimos por defecto el 100% del ancho de nuestro elemento principal, y somos tan altos como nuestro contenido secundario. Nuestro ancho y alto total es nuestro contenido + área de relleno + ancho/alto del borde.</p>
+        <p>Estamos separados por nuestros márgenes. Debido al colapso del margen, estamos separados por el ancho de uno de nuestros márgenes, no por ambos.</p>
+        <p>Los elementos en línea <span>como este</span> y <span>este otro</span> se ubican en la misma y la de los nodos de texto adyacentes, mientras hay espacio en la misma línea. Si un elemento en línea desborda, <span>sigue por la línea siguiente, si es posible (como la que contiene este texto)</span>, o simplemente pasa a una línea nueva, como hace esta imagen: <img src="https://mdn.mozillademos.org/files/13360/long.jpg"></p>
+    </div>
 </html>
