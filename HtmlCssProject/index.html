@@ -222,4 +222,23 @@
         <p>Estamos separados por nuestros márgenes. Debido al colapso del margen, estamos separados por el ancho de uno de nuestros márgenes, no por ambos.</p>
         <p>Los elementos en línea <span>como este</span> y <span>este otro</span> se ubican en la misma y la de los nodos de texto adyacentes, mientras hay espacio en la misma línea. Si un elemento en línea desborda, <span>sigue por la línea siguiente, si es posible (como la que contiene este texto)</span>, o simplemente pasa a una línea nueva, como hace esta imagen: <img src="https://mdn.mozillademos.org/files/13360/long.jpg"></p>
     </div>
-</html>
+    <h1>Que es el modelo de cajas CSS?</h1>
+    <p>El modelo de cajas CSS completo se aplica a cajas que presentan comportamiento en bloque; las cajas con comportamiento en línea solo usan una parte del comportamiento definido en el modelo de cajas. El modelo define cómo funcionan juntas las diferentes partes de una caja (margen, borde, relleno y contenido) para crear una caja que puedas ver en tu página. Para complicarlo un poco más, hay un modelo de cajas estándar y un modelo de cajas alternativo.</p>
+    <h3>Partes de una caja</h3>
+    <p>Al hacer una caja de tipo bloque en CSS tenemos los elementos siguientes:</p>
+    <ul>
+        <li><p>El <strong>contenido de la caja</strong> (o content box): El area donde se muestra el contenido, cuyo tamaño puede cambiarse utilizando propiedades como <em>width</em> y <em>height</em></p></li>
+        <li><p>El <strong>relleno de la caja</strong> (o padding box): El relleno es espacio en blanco alrededor del contenido; es posible controlar su tamaño usando la propiedad <em>padding</em> y otras propiedades relacionadas.</p></li>
+        <li><p>El <strong>borde de la caja</strong> (o border box): El borde de la caja envuelve el contenido y el del relleno. Es posible controlar su tamaño y estilo utilizando la propiedad <em>border</em> y otras propiedades relacionadas.</p></li>
+        <li><p>El <strong>matgen de la caja</strong> (o margin vox): El margen es la capa mas externa. Envuelve el contenido, el relleno y el borde como espacio en blanco entre la caja y otros elementos. Es posible controlar su tamaño usando la propiedad <em>margin</em>< y otras propiedades relacionadas./p></li>
+    </ul>
+    <p>El diagrama siguiente muestra estas capas:</p>
+    <div class="flujoNormalBody">
+        <img src="img/box-model.png" alt="Modelo de caja">
+    </div>
+    <h3>El modelo de cajas CSS estandar</h3>
+    <p>Podrías pensar que es más bien incómodo tener que sumar el borde y el área de relleno para obtener el tamaño real de la caja, ¡y tienes razón! Por este motivo, CSS introdujo un modelo de caja alternativo algún tiempo después del modelo de cajas estándar. Con este modelo, cualquier ancho es el ancho de la caja visible en la página, por lo tanto, el ancho del área de contenido es ese ancho menos el ancho para el relleno y el borde. El mismo CSS que hemos usado antes daría entonces el resultado siguiente (ancho = 350 px, altura = 150 px).</p>
+    <div><img src="img/alternate-box-model.png" alt="box-model-alter"></div>
+    <p>Por defecto, los navegadores usan el modelo de cajas estándar. Si deseas activar el modelo de cajas alternativo para un elemento, hazlo configurando box-sizing: border-box. Con ello, le dices al navegador que tome como el borde de la caja el área definida por cualquier tamaño que establezcas.</p>
+    
+    </html>
